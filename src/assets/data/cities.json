@@ -1,0 +1,99 @@
+
+  [{
+    "id": 1,
+    "name": "Oujda",
+    "region": "Oriental",
+    "description": "Oujda est une ville frontalière du Maroc, située à l'extrême nord-est du pays, à la limite de la région du Rif Oriental, sa proximité avec le port de Nador et avec l'Algérie à 5 km lui permet de jouer le rôle de carrefour entre le Maroc et l'Algérie, elle compte plus d'un million d'habitants. La médina d'Oujda avec son cachet arabo-musulman atteignait une superficie de vingt-cinq hectares, abritant plusieurs monuments de valeur historique indéniable, était entourée d'une ceinture de jardins plantés d'oliviers, ceinture épaisse de mille mètres en certains endroits.\n Chaque jardin était clos d'un mur en pisé de 1,80 à 2 mètres de haut percé de nombreux trous. Ces jardins constituaient donc un système de défense appréciable.\n Pas si vite, y'a pas que la médina à voir, vous verrez aussi non loin de la médina, s'étend le Parc Lalla Aïcha sur une superficie de 20 hectares environ. \nCréé en 1935, il constitue un lieu de détente pour les habitants d'Oujda. Il offre une belle aire de loisirs avec ses piscines, ses terrains de sports, ses clubs de tennis et d'équitation ainsi que ses équipements de jeux d'enfants. \nLe Parc Lalla Meriem aménagé pour la détente et abritant un musée. Ce parc est également le siège du Syndicat d'Initiative et du Tourisme de l'Oriental. \nOn peut aussi un endroit y apprendre la musique gharnati. Sa position géographique privilégiée d'Oujda constitue un atout pour sa prospérité et son progrès, la ville a une vocation commerciale et tertiaire, son économie se bâtit principalement sur la contrebande des marchandises en provenance de l'Algérie.",
+    "image": ["assets/images/oujda.jpg","assets/images/oujda2.jpg","assets/images/oujda3.jpg"],
+    "rate":9.5
+  },
+  {
+    "id": 2,
+    "name": "Fes",
+    "region": "Nord-est",
+    "description": "La ville impériale est la capitale de la culture traditionnelle du Maroc. Berceaux du savoir, ses superbes medersas en sont le flamboyant symbole.\n Cette ville fortifiée, inscrite au patrimoine mondial de l'UNESCO, vous ramènera au Moyen-Âge.\nSitué à l'intérieur de la médina, l'entrée dans le quartier Bab Bou-Jeloud s'effectue par son immense porte de 1913, décorée de faïences bleues et vertes, les couleurs de la ville.\n A l'intérieur de ce quartier, les visiteurs pourront visiter le musée Bar Batah, regroupant les Arts et Traditions de la ville.\nCe dernier a pris place dans le palais du même nom, érigé au cours du 19ème siècle.\nL'école coranique médersa Bou Inania possède une architecture gorgée de diverses ornementations.\nConstruite au milieu du 14ème siècle, cette médersa s'inscrit dans le processus de dynamisation de la ville engagé par la dynastie des mérinides.\nLes touristes pourront également se balader le long de l'avenue Talaa Kebira, une des plus longues de la ville, parsemée de boutiques commerçantes.",
+    "image": ["assets/images/fes.jpg","assets/images/fes2.jpg","assets/images/fes3.jpg"],
+    "rate":7.6
+  },
+  {
+    "id": 3,
+    "name": "Casablanca",
+    "region": "Ouest, face à l'océan Atlantique",
+    "description": "Casablanca est aujourd'hui la capitale économique du Maroc et sa plus grande ville, située sur la côte atlantique bordée par de magnifiques plages qui lui font une destination balnéaire toujours rivalisée. Elle est à environ 80 km au sud de Rabat, avec une population de 3 594 352 habitants en 2021 c'est la ville la plus peuplée du Maghreb. Casablanca est la troisième ville touristique du Maroc et on s'y rend surtout pour les affaires.\nasablanca possède l'une des plus grandes et belles mosquées de la planète, la Mosquée Hassan II, véritable symbole de la ville, il s'agit du plus grand minaret (210 m) en Afrique, et la cinquième plus grande mosquée au monde, elle est q'une des seules ouvertes aux non-Musulmans dans tout le monde arabe.\n'Casa', cest aussi une pléiade de pianos-bars, restaurants, discothèques branchées où vous pourrez faire la fête dans une ambiance délirante !\n Cette ville qui allie tradition architecturale marocaine et normes d'urbanisme et de confort moderne, séduit rapidement tous les visiteurs de Casablanca. On y trouve également le Morocco Mall, le plus grand centre commercial d'Afrique et l'un des plus grands au niveau international, possédant la troisième fontaine musicale du monde.",
+    "image": ["assets/images/casablanca.jpg","assets/images/casa2.jpg","assets/images/casa3.jpg"],
+    "rate":7.2
+  },
+  {
+    "id": 4,
+    "name": "Rabat",
+    "region": "Nord-ouest ",
+    "description": "Une ville côtière, son littoral déroule près de 60 kilomètres de côtes où se succèdent criques rocheuses ou plages de sable fin et son arrière-pays offre une diversité écologique idéale pour les randonnées.\n Rabat est la capitale administrative du Maroc, elle est située au bord de l'Atlantique et sur la rive gauche ou sud de l'embouchure du Bouregreg, en face de la ville de Salé, ces deux villes sont pour cette raison qualifiées de « villes jumelles ».Elle compte 577,827 habitants. Un climat agréable toute l'année, une situation privilégiée en bordure de l'Atlantique, une Histoire d'une richesse exceptionnelle, font de Rabat une destination touristique de premier plan, elle bénéficie d'un patrimoine historique unique, reflet de la diversité des héritages qui ont façonné les Deux Rives du Bouregreg au cours des siècles.\n Rabat est l'une des seules villes a conservé des patrimoines historique et culturel, depuis juin 2012, un ensemble de sites de la ville de Rabat est inscrit sur la liste du patrimoine mondial de l'Unesco en tant que bien culturel.\nVille moderne aujourd'hui, dont les habitants sont plus réservés que dans les autres villes marocaines, elle possède de nombreux sites historiques fascinants à visiter, elle est sans doute dotée aussi d'une construction moderne, une ville nouvelle est conçue par une équipe d'architectes, d'urbanistes et de paysagistes qui posent les jalons d'un nouvel urbanisme.\nCe qui a valu à Rabat un centre-ville doté d'aménagements urbains et paysagers de grande qualité. Rabat est la deuxième agglomération du pays après Casablanca.\nCes dernières années, Rabat commence à devenir un centre d'affaires profitant de la restructuration et de la réorganisation des administrations publiques ainsi que l'installation des sociétés étrangères et la création des zones off-shores.",
+    "image": ["assets/images/rabat.jpg","assets/images/rabat2.jpg","assets/images/rabat3.jpg"],
+    "rate":6.4
+  },
+  {
+    "id": 5,
+    "name": "Ifrane",
+    "region": "Nord-ouest ",
+    "description": "La province d'Ifrane surnommée la petite Suisse jouit d'énormes potentialités touristiques : variétés et diversités des paysages lacs et cours d'eau ainsi qu'un climat plus clément.\n Ses richesses naturelles en font un pôle touristique de prédilection pour les randonnées, la chasse au sanglier et ses lacs sont incontournables pour la pêche.\nLe Parc national d'Ifrane abrite notamment la plus grande forêt de cèdres du monde. Ifrane est une ville du Maroc, comptant 155 000 habitants et située dans le Moyen Atlas, à 1 713 mètres d'altitude.\nLa présence humaine dans la région remonte au Néolithique comme en témoignent des grottes telles que celles de Tizguite ainsi que des vestiges archéologiques remontant à la Préhistoire, il y a 50 000 ans.\nIfrane, ville du Moyen Atlas marocain, est caractérisée par son urbanisme européen. Située dans les montagnes du Moyen Atlas, elle est une oasis de fraîcheur et de verdure superbes : lacs, fontaines, le dépaysement est total, surprenant et régénérant pour les amourettes du paysage.\n Vous sentez la fraîcheur dès l'arrivée à Ifrane. Les sources et les lacs abondent dans cette région au cœur d'un massif forestier de cèdres. Les chalets au toit pentu évoquent d'ailleurs étonnamment la Suisse.",
+    "image":[ "assets/images/ifrane.jpg","assets/images/ifrane2.jpg","assets/images/ifrane3.jpg"],
+    "rate":8.6
+  },
+  {
+    "id": 6,
+    "name": "Tanger",
+    "region": "Nord",
+    "description": "Tanger a longtemps fait office de capitale culturelle officieuse pour un certain nombre d'écrivains et d'artistes du monde entier, attirés par son climat, ses paysages et son pittoresque, elle attire aussi les promoteurs immobiliers venus principalement du Rif et partout ailleurs. Situé sur le détroit de Gibraltar qui sépare l'Afrique de l'Europe, à environ 15 km des côtes espagnoles, et à la périphérie du massif montagneux du Rif, elle offre une vue exceptionnelle de l'autre côté.\nTanger a longtemps été une importante place stratégique. Avec ses deux mille cinq cents ans d'existence, elle compte une population de 974 000 habitants aujourd'hui, c'est l'une des plus anciennes villes d'Afrique du Nord.\nSa médina, sa kasbah, ses bazars et ses souks comptent parmi les plus animés du pays, et ses plages sont superbes d'environ 7 km. Au siècle dernier, Tanger est devenu l'un des lieux de prédilection du jet set internationale.\nStation balnéaire importante, Tanger dispose d'infrastructures hôtelières et touristiques variées, et d'une médina qui attire d'énorme visiteurs.\n A l'entrée de la Médina, le grand Socco est le lieu le plus fréquenté de la ville. La place est bordée par l'ancienne résidence du Mendoub (représentant du Sultan) et son parc.\n Le parc de la Mendoubia est une splendeur avec son figuier banian géant et ses nombreux dragonniers centenaires, vous pouvez aussi voir le Musée la Kasbah, Cinémathèque de Tanger et la Grottes d'Hercule.\n Tanger est depuis longtemps une terre d'accueil pour de nombreux artistes et intellectuels. Deuxième pôle économique marocain après Casablanca, l'activité industrielle de Tanger est diversifiée : industries textiles, chimiques, mécaniques, métallurgiques et navales.\n L'infrastructure de la ville du détroit est importante : un port gérant les flux de marchandises et de voyageurs (plus d'un million de voyageurs par an) intégrant un port de plaisance et un port de pêche. ",
+    "image": ["assets/images/tanger.jpg","assets/images/tanger2.jpg","assets/images/tanger3.jpg"],
+    "rate":8.8
+  },
+  {
+    "id": 7,
+    "name": "Tétouan",
+    "region": "Nord",
+    "description": "La ville Tétouan qui appartient à la région Tanger Tétouan Al Hoceïma.\nTétouan est une ville accueillante qui s'étale au bord de la Méditerranée avec un arrière-pays de charme. Tétouan est un lieu de rencontre de plusieurs peuples, religions et cultures, andalouse, ottomane, arabo-berbère et européenne.\n Ce n'est pas un hasard si certains la dénomment “Colombe blanche”, « Fille de Grenade » ou encore « la petite Jérusalem ».",
+    "image": ["assets/images/tetouan.jpg","assets/images/tetouan2.jpg","assets/images/tetouan3.jpg"],
+    "rate":7.4
+  },
+  {
+    "id": 8,
+    "name": " Assila",
+    "region": "Nord-ouest ",
+    "description": "Probablement construite par les Phéniciens comme port de commerce vers 1500 avant J.-C., la ville fortifiée d'Asilah, située à l'extrémité nord-ouest du Maroc, à 42 kilomètres au sud de Tanger, a accueilli plusieurs conquérants et pirates.\nRessemblant à une ville sur une île grecque de la mer Égée, Asilah est une belle station touristique aux bâtiments blancs.\nPendant votre séjour, vous pourrez admirer les remparts portugais du XIVe siècle, les portes anciennes, les rues fleuries de la médina et ses bâtiments de style islamique ou andalous, le palais du pacha Raissouni et le palais de la culture un bâtiment qui ressemble à une forteresse.\nLa modernisation a été fusionnée avec les anciennes structures, faisant de la ville d'Asilah une destination parfaite pour les amateurs d'histoire et de mer. Asilah est également célèbre pour ses longues plages de sable fin et doré où l'on peut faire des promenades à cheval ou à dos de chameau.\nParmi les belles plages on trouve Rmilat, également connue sous le nom de Paradise beach, à 30 minutes de la ville, Afriquia Beach, à 3 kilomètres au nord d'Asilah, et Briech Beach, un peu plus au nord. De juillet à septembre, de nombreux événements culturels sont organisés dans les rues étroites de la médina d'Asilah, notamment des concerts de flamenco, des expositions de design et des lectures de poésie.",
+    "image": ["assets/images/assilah.jpg","assets/images/assilah2.jpg","assets/images/assilah3.jpg"],
+    "rate":6.9
+  },
+  {
+      "id": 9,
+      "name": "Martil",
+      "region": "Nord-est de Tétouan",
+      "description": " Cette ville touristique est un avant goût de l'Espagne, une ambiance chaleureuse et sympathique règne dans ce petit coin du Maroc.\n Beaucoup de touristes Marocains viennent en famille séjourner pour des vacances en camping, location ou hôtels pour des prix très raisonnable !\n Sur la côte méditerranéenne du Maroc, Martil est une petite ville pleinement tournée vers le tourisme. Martil, à 10 km à l'est de Tétouan, est un agréable port de pêche et de détente.\n  Sa proximité avec la ville en fait une station balnéaire très réputée au Maroc.\n En hiver, cette petite ville est habitée par des étudiants de la faculté de lettres et des sciences humaines.\n En été, des milliers de touristes marocains et étrangers affluent sur son sable fin et chaud, et dans ses cafés et restaurants qui longent le bord de mer.\n Le soir, quand la fraîcheur s'installe, on se dégourdit les jambes le long du  'Corniche' Martil.",
+      "image": ["assets/images/martil.jpg","assets/images/martil2.jpg","assets/images/martil3.jpg"],
+      "rate":7.9
+  },
+  {
+      "id":10 ,
+      "name": "Al hoceima",
+      "region": "Nord",
+      "description": "Al Hoceima est une ville côtière située au nord du Maroc, entre la côte de la mer Méditerranée et la chaîne de montagnes du Rif. Al Hoceima est l'une des plus grandes stations balnéaires d'Afrique du Nord.C'est l'un des endroits les plus propres et les plus sûrs parmi les villes du Maroc, et c'est l'une des destinations touristiques les plus populaires depuis plusieurs décennies.\n C'est en 1925 que les Espagnols se sont installés à Al Hoceima, construisant des maisons, des écoles et des hôpitaux près de la côte. La ville se développe lentement et sa population se compose principalement de soldats espagnols et de leurs familles. À cette époque, la ville était connue sous le nom de Villa Alhucemas, un nom dérivé de l'arabe Huzama ; puis, en 1955, le Maroc a obtenu son indépendance et le gouvernement marocain a changé le nom en Al Hoceima, une ré-arabisation du nom espagnol, qui avait déjà une origine arabe. À la fin des années 1950, le Maroc était sous contrôle militaire, et une grande partie de la population a trouvé la mort au cours des troubles civils, des troubles qui ont entraîné un niveau de pauvreté important.\nPar la suite, dans les années 1960, un grand nombre de Marocains d'Al Hoceima ont été contraints d'émigrer, la plupart vers les Pays-Bas, la France et la Belgique.\n Avec le temps, l'économie a commencé à se redresser et les habitants de la ville ont décidé de peindre et de colorer leurs maisons en bleu et en blanc, les couleurs du ciel et de la mer, une tradition qui se poursuit encore aujourd'hui. En 2007, le maire de la ville a décidé que tous les habitants devaient utiliser ces couleurs pour rétablir l'identité traditionnelle de la ville. Aujourd'hui, l'économie repose principalement sur le tourisme et la pêche, et la population compte environ 90 000 habitants.\n L'indépendance a certainement apporté des changements à Al Hoceima, bien que les influences espagnoles restent évidentes dans la langue et l'architecture de la ville.\n En se promenant dans la ville, on tombe sur la place Mohammed VI, avec des fontaines au niveau du sol, qui s'illuminent le soir et la nuit.",
+      "image": ["assets/images/alhoceima.jpg","assets/images/alhoceima2.jpg","assets/images/alhoceima3.jpg"],
+      "rate":6.6
+  },
+  {
+      "id":11 ,
+      "name": "Marrakech",
+      "region": "Ouest",
+      "description": "Quelle que soit la façon avec laquelle vous choisirez de vivre Marrakech, vous emporterez certainement un peu de Marrakech en vous, c'est un endroit plein de surprises !\n Avec ses innombrables marchés, jardins, palais et mosquées, vous en aurez plein la vue. Marrakech, appelée aussi la ville rouge est la quatrième plus grande ville du Royaume après Casablanca, Fès et Tanger avec 928 850 habitants en 2014, elle demeure la capitale touristique du pays.\nPlus qu'une cité, Marrakech est une perle polie par l'histoire et le goût de l'accueil, sachant accueillir ses invités à bras ouverts depuis des siècles.\nLa ville est subdivisée en deux parties distinctes : la ville nouvelle (ou moderne) on y trouve de nombreux complexes hôteliers, boutiques de luxe, banques, salons de thé et terrasses de café et la médina ou ville historique (dix kilomètres d'enceinte), il est aisé d'imaginer les caravaniers qui chargeaient leurs dromadaires de denrées, d'outils et d'objets artisanaux.\n Les souks offrent tout ce que le voyageur attend : couleurs, ambiances, parfums, visages souriants et accueillants. Marrakech célèbre dans le monde entier pour sa palmeraie et son minaret, cette ville est un véritable spectacle vivant où les hommes et le folklore local sont habilement mis en scène dans un décor médiéval.\n Un patrimoine culturel impressionnant avec de nombreux monuments et des musées de qualité.",
+      "image": ["assets/images/marrakech.jpg","assets/images/marrakech2.jpg","assets/images/marrakech3.jpg"],
+      "rate":8.2
+  },
+  {
+      "id": 12,
+      "name": "Agadir",
+      "region": "Ouest",
+      "description": "La ville d'Agadir est située le long de la cote ouest et c'est la capitale de la région de Sous Massa. Baignée par l'océan Atlantique, Agadir est moderne et appréciée avant tout pour sa plage, longue plus de 10 kilomètres, son atmosphère détendue et la grande hospitalité de ses citoyens.\nLe sable, la mer et le soleil font de cette ville, reconstruite et réaménagée presque entièrement après le fort tremblement de terre qui l'a détruite en 1960, une station balnéaire magnifique, verdoyante et luxueuse. Ses rivages sablonneux, sa ville et ses dizaines d'hôtels constituent une attraction touristique majeure pour les nombreux visiteurs venus d'Europe et d'ailleurs pendant les mois d'hiver. La ville est entourée de quartiers résidentiels mais le front de mer est le véritable atout : la longue plage de sable est baignée par des eaux cristallines et le soleil y brille presque toute l'année.\nConnue pour ses immeubles blancs cachés derrière les dunes, ses larges avenues fleuries, ses hôtels modernes et ses cafés à l'européenne, Agadir n'est plus une ville typiquement marocaine traditionnelle, mais une ville moderne, vivante et dynamique, résolument tournée vers l'avenir.\n Agadir est le premier port de pêche du Maroc.\n Si vous envisagez de choisir Agadir comme destination de vacances, profitez des nombreuses excursions d'une journée qui vous permettront de découvrir les beaux villages des environs. De plus, à 7 kilomètres au nord du centre, vous trouverez la Kasbah, construite en 1541 et ayant partiellement survécu au tremblement de terre, d'où vous pourrez profiter de vues magnifiques. ",
+      "image": ["assets/images/agadir.jpg","assets/images/agadir2.jpg","assets/images/agadir3.jpg"],
+      "rate":8.1
+
+  }]
+

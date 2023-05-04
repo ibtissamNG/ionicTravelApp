@@ -1,0 +1,36 @@
+
+
+#container strong {
+  font-size: 20px;
+  line-height: 26px;
+}
+
+#container a {
+  text-decoration: none;
+}
+
+#container .already{
+  text-align: center;
+  font-size: 14px;
+  line-height: 22px;
+  color: #8c8c8c;
+  margin-top: 15px;
+}
+
+ion-button {
+  --background: #1b2e35;
+}
+
+
+.moroccoImg {
+  border-radius: 40px;
+  max-width: 300px;
+  position: relative;
+  left: 50%;
+  transform: translate(-50%, 8px);
+}
+
+.h1{
+  text-align: center;
+  color: #1b2e35;
+}

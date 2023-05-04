@@ -1,0 +1,129 @@
+<ion-header>
+  <ion-toolbar color="darkBlue">
+    <ion-buttons slot="start">
+      <ion-back-button></ion-back-button>
+    </ion-buttons>
+    <ion-title></ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <div class="login-section">
+    <div class="heading">
+     <!--  <h1>S'inscrire</h1> -->
+      <ion-row>
+        <ion-col>
+          <img class="loginImg" src="assets/images/login1.jpg" alt="" />
+        </ion-col>
+      </ion-row>
+    </div>
+    <div class="login-form ion-padding">
+      <form
+        [formGroup]="loginForm"
+        (ngSubmit)="logIn(loginForm.controls['email'], loginForm.controls['password'] )"
+      >
+        <!-- Email -->
+        <div class="form-input">
+          <ion-item>
+            <ion-label position="floating">Email</ion-label>
+            <ion-input
+              formControlName="email"
+              type="email"
+              [class.invalid]="!loginForm.controls['email'].valid
+          && loginForm.controls['email'].touched"
+              id="email"
+              required
+            >
+              <ion-icon name="mail-outline"></ion-icon
+            ></ion-input>
+          </ion-item>
+          <div
+            *ngIf="!loginForm.controls['email'].valid
+          && loginForm.controls['email'].touched"
+          >
+            <ion-text
+              color="danger"
+              *ngIf=" errorControl['email'].errors?.['required']"
+            >
+              Email est requis
+            </ion-text>
+            <ion-text
+              color="danger"
+              *ngIf="errorControl['email'].errors?.['pattern']"
+            >
+              Adresse email invalide
+            </ion-text>
+          </div>
+        </div>
+
+        <!-- Password -->
+        <div class="form-input">
+          <ion-item>
+            <ion-label position="floating">Password</ion-label>
+            <ion-input
+              formControlName="password"
+              type="password"
+              id="password"
+              required
+              [class.invalid]="!loginForm.controls['password'].valid
+          && loginForm.controls['password'].touched"
+            >
+              <ion-icon name="lock-closed-outline"></ion-icon
+            ></ion-input>
+          </ion-item>
+          <div
+            *ngIf="!loginForm.controls['password'].valid
+        && loginForm.controls['password'].touched"
+          >
+            <ion-text
+              color="danger"
+              *ngIf=" errorControl['password'].errors?.['required']"
+            >
+              Password est requis
+            </ion-text>
+            <ion-text
+              color="danger"
+              *ngIf="errorControl['password'].errors?.['pattern']"
+            >
+              Password doit contenir des lettres et nombres
+            </ion-text>
+            <ion-text
+              color="danger"
+              *ngIf="errorControl['password'].errors?.['minLength']"
+            >
+              Password très court
+            </ion-text>
+          </div>
+        </div>
+        <ion-row>
+          <ion-col class="ion-align-self-center">
+            <ion-button type="submit" expand="block" class="login-button"
+              >Confirmation
+            </ion-button>
+          </ion-col>
+        </ion-row>
+      </form>
+      
+      <ion-row>
+        <ion-col class="ion-align-self-center">
+        <ion-button
+        type="submit"
+        color="darkBlue"
+        (click)="authService.GoogleAuth()"
+        expand="block"
+        >
+          S'inscrire avec Google
+        </ion-button>
+      </ion-col>
+    </ion-row>
+
+    <ion-row>
+      <ion-col>
+        <a class="forgot-password" [routerLink]="['/password-reset']">
+          Mot de passe oublié?
+        </a>
+      </ion-col>
+    </ion-row>
+  </div>
+  </div>
+</ion-content>

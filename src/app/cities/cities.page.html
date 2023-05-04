@@ -1,0 +1,30 @@
+<ion-header>
+  <ion-toolbar color="darkBlue">
+    <ion-button slot="start" type="submit" fill="clear" [routerLink]="['/reservation-history']"
+      ><ion-icon name="book-outline"></ion-icon></ion-button> 
+    <ion-title slot="start">Moroccan cities</ion-title>
+    <ion-button slot="end" type="submit" fill="clear" (click)="authService.SignOut()"
+      ><ion-icon name="log-out-outline"></ion-icon></ion-button> 
+  </ion-toolbar>  
+</ion-header>
+
+
+<ion-content class="ion-padding">
+  <ion-list>
+    <ion-item button *ngFor="let item of cities" [routerLink]="[item.id]">
+      <ion-thumbnail slot="start">
+        <img src={{item.image[0]}} alt="not found">
+
+      </ion-thumbnail>
+      <ion-label>
+        {{item.name}} 
+        <p>{{item.region}}</p>
+      </ion-label>
+
+      <ion-badge slot="end" class="badge">{{item.rate}}</ion-badge>
+    </ion-item>
+  </ion-list>
+<ion-infinite-scroll (ionInfinite)="loadMore($event)">
+  <ion-infinite-scroll-content loadingSpinner="bubbles" loadingText="Loading.."></ion-infinite-scroll-content>
+</ion-infinite-scroll>
+</ion-content>

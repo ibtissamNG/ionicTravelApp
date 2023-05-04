@@ -1,0 +1,124 @@
+<ion-header >
+  <ion-toolbar color="darkBlue">
+    <ion-buttons slot="start">
+      <ion-back-button defaultHref="/cities/" text=""></ion-back-button>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content class="ion-padding">
+<!--   <ion-header class="ion-padding text">Veuillez remplir les champs du formulaire suivant:</ion-header> -->
+  <ion-list lines="full">
+    <form [formGroup]="reservationForm" (ngSubmit)="formSubmit()">
+      <!-- name -->
+      <ion-item>
+        <ion-label position="floating">Name</ion-label>
+        <ion-input formControlName="name" type="text">
+          <ion-icon name="person" color="primary"></ion-icon>
+        </ion-input>
+      </ion-item>
+      <span *ngIf="name?.touched && name?.errors?.required">
+        <small class="text-danger">Email is required</small>
+      </span>
+
+      <!-- email -->
+      <ion-item>
+        <ion-label position="floating">Email</ion-label>
+        <ion-input
+          formControlName="email"
+          type="email"
+          [value]="reservationForm.controls['email'].value"
+          id="email"
+          (ionChange)="reservationForm.controls['email'].setValue($event.detail.value)"
+        >
+          <ion-icon name="mail" color="primary"></ion-icon>
+        </ion-input>
+      </ion-item>
+      <span *ngIf="email?.errors?.pattern">
+        <small class="text-danger">Please enter a valid email address</small>
+      </span>
+      <span *ngIf="email?.touched && email?.errors?.required">
+        <small class="text-danger">Email is required</small>
+      </span>
+
+      <!-- phone -->
+      <ion-item>
+        <ion-label position="floating">Phone</ion-label>
+        <ion-input formControlName="phone" type="phone">
+          <ion-icon name="call" color="primary"></ion-icon>
+        </ion-input>
+      </ion-item>
+      <span *ngIf="phone?.touched && phone?.errors?.required">
+        <small class="text-danger">Phone is required</small>
+      </span>
+
+      <!-- hotel -->
+      <ion-item>
+        <ion-label position="floating">Hôtel</ion-label>
+        <ion-input formControlName="hotel" type="text">
+          <ion-icon name="bed" color="primary"></ion-icon>
+        </ion-input>
+      </ion-item>
+      <span *ngIf="hotel?.touched && hotel?.errors?.required">
+        <small class="text-danger">Hôtel name is required</small>
+      </span>
+
+      <!-- date -->
+      <ion-item>
+        <ion-label position="floating">Date</ion-label>
+        <ion-input
+          [value]="reservationForm.controls['date'].value | date: 'yyyy-MM-dd'"
+          id="date"
+          (ionChange)="reservationForm.controls['date'].setValue($event.detail.value)"
+        >
+          <ion-icon name="calendar" color="primary"></ion-icon>
+      </ion-input>
+        <ion-popover trigger="date" size="cover">
+          <ng-template>
+            <ion-datetime
+              presentation="date"
+              formControlName="date"
+            ></ion-datetime>
+          </ng-template>
+        </ion-popover>
+      </ion-item>
+      <span *ngIf="dateError">
+        <small class="text-danger"
+          >Please select a date that is not in the past</small
+        >
+      </span>
+      <span *ngIf="dateNull">
+        <small class="text-danger">Date is required</small>
+      </span>
+
+
+      <ion-item>
+        <ion-label position="floating">Duration</ion-label>
+        <ion-input
+          formControlName="duration"
+          type="number"
+          min="1"
+          step="1"
+        >
+          <ion-icon name="hourglass" color="primary"></ion-icon>
+        </ion-input>
+      </ion-item>
+      <span *ngIf="duration?.errors?.min">
+        <small  class="text-danger"> Must be at least be 1 day</small></span
+      >
+      <span *ngIf="duration?.touched && duration?.errors?.required">
+        <small class="text-danger">Duration is required</small>
+      </span>
+
+      <ion-row class="ion-padding-top">
+        <ion-col class="ion-text-center">
+          <ion-button
+            type="submit"
+            color="primary"
+            >Confirmer la réservation</ion-button
+          >
+        </ion-col>
+      </ion-row>
+    </form>
+  </ion-list>
+</ion-content>

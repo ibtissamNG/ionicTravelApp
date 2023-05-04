@@ -1,0 +1,43 @@
+<ion-header>
+  <ion-toolbar color="darkBlue">
+    <ion-title>MoroccoTours</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content class="auth-form" id="container">
+  <ion-grid>
+    <ion-row>
+      <ion-col>
+        <ion-card-header
+          ><!-- <h1 class="h1">Bienvenue</h1> --><img
+            class="moroccoImg"
+            src="assets/icon/md-my-custom-icon.svg"
+          /><br /><br />L'application du voyage autour du Maroc vous permet de
+          découvrir les fascinantes villes du pays et y réserver
+          facilement.</ion-card-header
+        >
+      </ion-col>
+    </ion-row>
+  <!--   <ion-row>
+      <ion-col>
+        <img src="assets/images/login1.jpg" alt="" />
+      </ion-col>
+    </ion-row> -->
+    <ion-row>
+      <ion-col class="ion-align-self-center ion-padding">
+        <ion-button
+          [routerLink]="['/registration']"
+          expand="block"
+          color="primary"
+          >Registration</ion-button
+        >
+        <div class="already">
+          <span> Vous avez déjà un compte?</span>
+        </div>
+        <ion-button [routerLink]="['/login']" expand="block" color="darkBlue"
+          >S'inscrire</ion-button
+        >
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+</ion-content>

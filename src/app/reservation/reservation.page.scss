@@ -1,0 +1,22 @@
+ion-item ion-icon {
+    font-size: larger;
+    position: absolute;
+    right: 8px;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+  
+  ion-item ion-label {
+    padding-right: 32px; 
+    font-weight: bold;
+  }
+
+  ion-toolbar {
+    padding: 8px;
+}
+
+.text {
+  font-weight: 500;
+  letter-spacing: 0.4px;
+  color: #1b2e35;
+}

@@ -1,0 +1,65 @@
+
+.login-section {
+    height: 74vh;
+    width: 100%;
+    max-width: 500px;
+    background: #fff;
+    right: 0;
+    left: 0;
+    position: fixed;
+    margin: auto;
+    border-top-right-radius: 46px;
+    border-top-left-radius: 46px;
+}
+
+.heading {
+    h1{
+        font-weight: bolder;
+        text-align: center;
+        padding-top: 8px;
+    }
+}
+
+.forgot-password {
+    text-decoration: none;
+    color: black;
+    float: right;
+}
+
+.login-form {
+    .form-input {
+        position: relative;
+        margin-bottom: 10px;
+        ion-item{
+            padding-left: 0;
+        }
+
+        ion-icon {
+            position: absolute;
+            top: 10px;
+            z-index: 2;
+            font-size: 1.2rem;
+            right: 8px;
+        }
+
+        ion-label {
+            font-weight: bold;
+            z-index: 3;
+        }
+
+        ion-input {
+            font-size: 1rem;
+            --padding-start: 36px;
+            --padding-end: 36px;
+            color: 1e7955;
+        }
+      
+    }
+}
+
+.loginImg {
+    width: 70%;
+    position: relative;
+    left: 50%;
+    transform: translate(-50%,0);
+}
