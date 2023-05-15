@@ -45,16 +45,6 @@ export class ReservationService {
     return this.reservationListRef;
   }
 
-  // Update
-  updateReservation(id: string, res: Reservation) {
-    return this.reservationRef.update({
-      name: res.name,
-      email: res.email,
-      phone: res.phone,
-      hotel: res.hotel,
-      duration: res.duration
-    });
-  }
   
   // Delete
   deleteReservation(idRes: string,idUser: string) {
