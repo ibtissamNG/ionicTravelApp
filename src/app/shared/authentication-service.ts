@@ -25,11 +25,15 @@ export class AuthenticationService {
     this.ngFireAuth.authState.subscribe((user) => {
       if (user) {
         this.userData = user;
-        localStorage.setItem('user', JSON.stringify(this.userData));
+        const tst=localStorage.setItem('user', JSON.stringify(this.userData));
         JSON.parse(localStorage.getItem('user')!);
       } else {
-        localStorage.setItem('user', "");
-        JSON.parse(localStorage.getItem('user')!);
+        const userString = localStorage.getItem('user');
+          if (userString) {
+            const user = JSON.parse(userString);
+          } else {
+            console.log ("user is not present in localStorage");
+          }
       }
     });
   }
@@ -70,13 +74,13 @@ export class AuthenticationService {
   // Returns true when user is looged in
   get isLoggedIn(): boolean {
     const user = JSON.parse(localStorage.getItem('user')!);
-    return user !== null && user.emailVerified !== false ? true : false;
+    return user !== null && user?.emailVerified !== false ? true : false;
   }
 
   // Returns true when user's email is verified
   get isEmailVerified(): boolean {
     const user = JSON.parse(localStorage.getItem('user')!);
-    return user.emailVerified !== false ? true : false;
+    return user?.emailVerified !== false ? true : false;
   }
 
   // Sign in with Gmail
