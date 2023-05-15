@@ -1,13 +1,13 @@
 <ion-header >
   <ion-toolbar color="darkBlue">
     <ion-buttons slot="start">
-      <ion-back-button defaultHref="/cities/" text=""></ion-back-button>
+      <ion-back-button defaultHref="/cities" text=""></ion-back-button>
     </ion-buttons>
   </ion-toolbar>
 </ion-header>
 
 <ion-content class="ion-padding">
-<!--   <ion-header class="ion-padding text">Veuillez remplir les champs du formulaire suivant:</ion-header> -->
+   <ion-header class="ion-padding text">Veuillez remplir le formulaire suivant:</ion-header> 
   <ion-list lines="full">
     <form [formGroup]="reservationForm" (ngSubmit)="formSubmit()">
       <!-- name -->
