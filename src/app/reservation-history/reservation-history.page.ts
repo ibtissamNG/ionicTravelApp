@@ -5,6 +5,7 @@ import { auth } from 'src/environments/environment';
 import { LoadingController, InfiniteScrollCustomEvent } from '@ionic/angular';
 import { AuthenticationService } from '../shared/authentication-service';
 import { Router } from '@angular/router';
+import { map } from 'rxjs';
 
 @Component({
   selector: 'app-reservation-history',
@@ -42,7 +43,15 @@ export class ReservationHistoryPage implements OnInit {
         this.userMail = user.email;
         this.resService
           .getReservationList(user?.uid)
-          .valueChanges()
+          .snapshotChanges()
+          .pipe(
+            map((snapshots) =>
+              snapshots.map((snapshot) => ({
+                key: snapshot.key,
+                ...snapshot.payload.val(),
+              }))
+            )
+          )
           .subscribe((res) => {
             loading.dismiss();
             this.reservation = res;
@@ -60,15 +69,19 @@ export class ReservationHistoryPage implements OnInit {
   }
 
   delete(res: any, idUser: string) {
-    console.log('item deleted', res.key);
+    const confirmation = confirm('Êtes-vous sûr de vouloir supprimer votre réservation ?');
+    if (confirmation) {
+    console.log('item deleted', res);
+    console.log('item.key', res.key);
 
     this.resService
       .deleteReservation(res.key, idUser)
       .then(() => {
-        window.location.reload();
+        this.reservation = this.reservation.filter((item) => item.key !== res.key); 
       })
       .catch((error) => {
         console.log('error deleting item', error);
       });
   }
+}
 }

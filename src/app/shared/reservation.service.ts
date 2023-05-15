@@ -57,8 +57,8 @@ export class ReservationService {
   }
   
   // Delete
-  deleteReservation(idRes: string,idUser: string) {
-    this.reservationRef = this.db.object('/reservation/'+idUser+'/'+idRes);
-    return this.reservationRef.remove();
+  deleteReservation(idRes: string,idUser: string) :Promise<void>{
+    const reservationRef = this.db.object(`reservation/${idUser}/${idRes}`);
+  return reservationRef.remove();
   }
 }

@@ -2,7 +2,7 @@
   <ion-toolbar color="darkBlue" >
     <ion-title>Liste des réservations</ion-title>
     <ion-buttons slot="start">
-      <ion-back-button defaultHref="/cities/" text=""></ion-back-button>
+      <ion-back-button defaultHref="/cities" text=""></ion-back-button>
     </ion-buttons>
   </ion-toolbar>
 </ion-header>
@@ -21,7 +21,7 @@
         Date: {{ item.date | date:
             'dd.MM.yyyy' }}<br>
        Hôtel:  {{item.hotel}}<br>
-      Durée: {{item.duration | date}}
+      Durée: {{item.duration }} jours
         </ion-label>
         <ion-label slot="end">
           <ion-button (click)="delete(item,currentUser)" >
@@ -32,8 +32,6 @@
   </ion-list>
   </ion-card-content>
 
-<!-- <ion-infinite-scroll (ionInfinite)="loadMore($event)">
-  <ion-infinite-scroll-content loadingSpinner="bubbles" loadingText="Loading.."></ion-infinite-scroll-content> 
-</ion-infinite-scroll> -->
+
 </ion-card>
 </ion-content>
