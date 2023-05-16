@@ -13,7 +13,7 @@
       <!-- name -->
       <ion-item>
         <ion-label position="floating">Name</ion-label>
-        <ion-input formControlName="name" type="text">
+        <ion-input formControlName="name" type="text" id="name">
           <ion-icon name="person" color="primary"></ion-icon>
         </ion-input>
       </ion-item>
@@ -44,7 +44,7 @@
       <!-- phone -->
       <ion-item>
         <ion-label position="floating">Phone</ion-label>
-        <ion-input formControlName="phone" type="phone">
+        <ion-input formControlName="phone" type="phone" name="phone">
           <ion-icon name="call" color="primary"></ion-icon>
         </ion-input>
       </ion-item>
@@ -55,7 +55,7 @@
       <!-- hotel -->
       <ion-item>
         <ion-label position="floating">Hôtel</ion-label>
-        <ion-input formControlName="hotel" type="text">
+        <ion-input formControlName="hotel" type="text" name="hotel">
           <ion-icon name="bed" color="primary"></ion-icon>
         </ion-input>
       </ion-item>
@@ -70,6 +70,7 @@
           [value]="reservationForm.controls['date'].value | date: 'yyyy-MM-dd'"
           id="date"
           (ionChange)="reservationForm.controls['date'].setValue($event.detail.value)"
+          name="date"
         >
           <ion-icon name="calendar" color="primary"></ion-icon>
       </ion-input>
@@ -99,6 +100,7 @@
           type="number"
           min="1"
           step="1"
+          name="duration"
         >
           <ion-icon name="hourglass" color="primary"></ion-icon>
         </ion-input>

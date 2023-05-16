@@ -4,7 +4,6 @@ import { CityService } from 'src/app/services/city.service';
 import { AuthenticationService } from '../shared/authentication-service';
 import { ReservationService } from '../shared/reservation.service';
 import 'firebase/compat/firestore';
-import { auth } from 'src/environments/environment';
 
 
 

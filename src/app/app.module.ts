@@ -1,4 +1,3 @@
-
 import { BrowserModule } from '@angular/platform-browser';
 import { RouteReuseStrategy } from '@angular/router';
 
@@ -16,7 +15,6 @@ import { environment } from '../environments/environment';
 import { HttpClientModule } from '@angular/common/http';
 import { NgModule } from '@angular/core';
 
-
 @NgModule({
   declarations: [AppComponent],
   entryComponents: [],
@@ -29,10 +27,9 @@ import { NgModule } from '@angular/core';
     AngularFirestoreModule,
     AngularFireStorageModule,
     AngularFireDatabaseModule,
-    HttpClientModule
+    HttpClientModule,
   ],
   providers: [{ provide: RouteReuseStrategy, useClass: IonicRouteStrategy }],
   bootstrap: [AppComponent],
-
 })
 export class AppModule {}

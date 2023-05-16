@@ -25,12 +25,13 @@ export class AuthenticationService {
     this.ngFireAuth.authState.subscribe((user) => {
       if (user) {
         this.userData = user;
-        const tst=localStorage.setItem('user', JSON.stringify(this.userData));
-        JSON.parse(localStorage.getItem('user')!);
+        localStorage.setItem('user', JSON.stringify(this.userData));
+       /*  JSON.parse(localStorage.getItem('user')!); */
       } else {
         const userString = localStorage.getItem('user');
           if (userString) {
             const user = JSON.parse(userString);
+            console.log("user: "+ user);
           } else {
             console.log ("user is not present in localStorage");
           }
@@ -52,7 +53,7 @@ export class AuthenticationService {
   SendVerificationMail() {
     return this.ngFireAuth.currentUser.then((user) => {
       return user!.sendEmailVerification().then(() => {
-        this.router.navigate(['login']);
+        this.router.navigate(['home']);
       });
     });
   }
@@ -94,12 +95,12 @@ export class AuthenticationService {
       .signInWithPopup(provider)
       .then((result) => {
         this.ngZone.run(() => {
-          this.router.navigate(['dashboard']);
+          this.router.navigate(['cities']);
         });
         this.SetUserData(result.user);
       })
       .catch((error) => {
-        window.alert(error);
+        console.log(error);
       });
   }
 
